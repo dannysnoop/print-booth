@@ -88,4 +88,3 @@ export class PhotoUploadComponent implements OnInit , AfterViewInit{
 
 
 }
-// https://ctxt.io/2/AACYLDxuFg
