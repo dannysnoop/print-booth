@@ -88,3 +88,4 @@ export class PhotoUploadComponent implements OnInit , AfterViewInit{
 
 
 }
+// optionsBuilder.UseNpgsql("Server=103.70.12.41;Port=30401;Database=FunStudioApi;User Id=admin;Password=p@ssWoRd!;");
