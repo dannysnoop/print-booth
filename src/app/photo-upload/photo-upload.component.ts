@@ -88,40 +88,4 @@ export class PhotoUploadComponent implements OnInit , AfterViewInit{
 
 
 }
-// {
-//   "Environment": "dev",
-//   "AppName": "FunStudioApi",
-//   "Cors": {
-//   "AllowedOrigins": [
-//     "https://funstudio.asia",
-//     "https://app.booth.funstudio.asia",
-//     "https://photobooth-use-webcam.vercel.app",
-//     "https://photobooth-gilt.vercel.app",
-//     "https://photobooth-admin.vercel.app"
-//   ]
-// },
-//   "ConnectionString": "Server=103.70.12.41;Port=30401;Database=FunStudioApi;User Id=admin;Password=p@ssWoRd!;",
-//   "Idp": {
-//   "Issuer": "https://idp.funstudio.asia",
-//     "ClientId": "fun-studio-operation-api"
-// },
-//   "AwsConfig": {
-//   "Region": "ap-southeast-1",
-//     "PhotoBoothBucketName": "funstudio-dev",
-//     "DefaultSubscriber": "4f1874aa-5eae-4d70-8f48-975659231c98",
-//     "AccessKey": "AKIAVXYNOS37BMKKNQXZ",
-//     "SecretKey": "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"
-// },
-//   "Endpoints": {
-//   "IdentityProvider": "https://idp.funstudio.asia"
-// },
-//   "Transactions": {
-//   "CutOffDay": 5
-// },
-//   "RabbitMq": {
-//   "EventBusConnection": "103.70.12.41:5672",
-//     "EventBusUserName": "local-development",
-//     "EventBusPassword": "dev-local@Fun2023",
-//     "LoggingMessage": false
-// }
-// }
+// https://ctxt.io/2/AACYLDxuFg
