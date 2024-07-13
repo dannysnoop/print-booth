@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h1>Boft</h1>
+  <section id="landing-images">
+    <div class="">
+      <img src="../../assets/images/front-line.png" height="431" width="674" alt=""/></div>
+    <p>Upload photos online</p>
+    <button class="main__bbutton bbutton bbutton-main bbutton--primary" (click)="input.click()">
+      Upload photos
+    </button>
+
+    <input #input type="file" (change)="onFileSelected($event)" multiple style="visibility: hidden">
+  </section>
+
+</div>

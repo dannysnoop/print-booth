@@ -1,0 +1,50 @@
+<div class="wrapper">
+<!--  <div class="wrapper__info">-->
+<!--    <p>- Quý khách ghi đúng thông tin nạp tiền thì tài khoản sẽ được cộng tự động sau khi giao dịch thành công.</p>-->
+<!--    <p>- Khuyến cáo nạp qua bank, vì nạp Momo đôi lúc giao dịch bị delay. Nạp bank thì 3s - 3p tiền lên.-->
+<!--    </p>-->
+<!--    <p>- Nếu quý khách muốn nạp bằng phương thức khác, hoặc cần hỗ trợ vui lòng liên hệ Phone/Zalo :-->
+<!--    </p>-->
+<!--  </div>-->
+  <div class="wrapper__content row mt-4">
+    <div class="wrapper__content--left ms-3 col-md-4 col-sm-12">
+      <h3>Thông tin thanh toán
+      </h3>
+
+      <div class="wrapper__content--left-bank">
+        <p >
+          Ngân hàng: <span style="font-weight: 700;
+    font-size: 17px;">CAKE VP Bank</span></p>
+      </div>
+      <div class="wrapper__content--left-owner">
+        <p>Chủ tài khoản: Phung duy phuc</p>
+      </div>
+      <div class="wrapper__content--left-accountNumber">
+        <p style="cursor: pointer;" class="ps-2">Số tài khoản: 0367623254 <i class="fa fa-copy"  [cdkCopyToClipboard]="'0367623254'" style="font-size:18px ; margin-left: 10px"></i></p>
+      </div>
+
+      <div class="wrapper__content--left-bank">
+        <p>Số tiền: {{priceMustPay |  currency:"VND":true}} </p>
+      </div>
+
+      <div class="wrapper__content--left-content">
+        <p>Nội dung chuyển khoản:
+        </p>
+        <p>{{messageTransfer}}  <i class="fa fa-copy"  [cdkCopyToClipboard]="messageTransfer" style="font-size:18px ; margin-left: 10px"></i> </p>
+        <p class="d-flex align-items-center ps-2"><span nz-icon nzType="copy" class="m-lg-1" nzTheme="outline" style="cursor: pointer"></span></p>
+      </div>
+<!--      <div class="wrapper__content&#45;&#45;left-alert">-->
+<!--        Hệ thống sẽ tự động cộng tiền vào tài khoản của bạn sau khoảng 1-5 phút. Nếu quá 2 tiếng tiền chưa được cộng vui lòng liên hệ admin để được hỗ trợ.-->
+<!--      </div>-->
+    </div>
+    <div class="wrapper__content--right col-md-7 col-sm-12">
+      <h3>Quét mã QR để thanh toán
+      </h3>
+
+      <h6>
+        Sử dụng <strong>App Internet Banking</strong> App Internet Banking hoặc ứng dụng camera hỗ trợ QR code để quét mã
+      </h6>
+
+      <img src="../../assets/images/61.PNG" /></div>
+  </div>
+</div>

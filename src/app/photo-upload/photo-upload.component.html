@@ -1,0 +1,33 @@
+<div class="header">
+  <div class="header__image">
+    <img [src]="photos.length > 0 && photos[0].src || '../../assets/images/front-line.png'" width="36" height="36"/>
+   <p style="margin-left: 5px">{{photos.length}} photos</p>
+  </div>
+  <div class="header__price" >
+    <p >{{ priceUnit * photos.length |  currency:"VND":true}}</p>
+  </div>
+
+    <div class="header__remove">
+      <i (click)="removeAll()" class="fa fa-trash-o" style="font-size:24px ; color: var(--color-primary);; font-weight: lighter"></i>
+    </div>
+</div>
+
+<section id="upload-section">
+  <div class="preview">
+    <div class="preview__card1" *ngFor="let photo of photos; let i = index">
+      <svg (click)="deleteImage(i)" class="svg-delete"viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><circle cx="15.5" cy="12.5" r="12.5" fill="white"></circle></g><path d="M10.9546 7.95459L20.0455 17.0455" stroke="#7E7E7E" stroke-width="1.13636" stroke-linecap="round"></path><path d="M10.9545 17.0454L20.0455 7.9545" stroke="#7E7E7E" stroke-width="1.13636" stroke-linecap="round"></path><defs><filter id="filter0_d" x="0.727273" y="0" width="29.5455" height="29.5455" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="2.27273"></feOffset><feGaussianBlur stdDeviation="1.13636"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+      <img  [src]="photo.src" alt="Preview" [ngClass]="{'img' : photo.width === photo.height}" [ngStyle]="{'padding-bottom': (229 - photo.width) + 'px'}">
+    </div>
+
+  </div>
+</section>
+
+
+<div class="footer">
+      <button class="bbutton bbutton-navi bbutton-normal  bbutton-thin bbutton--secondary" (click)="input.click()">Add Photo</button>
+  <button class="bbutton bbutton-navi bbutton-normal  bbutton-thin bbutton--primary"  (click)="uploadImage()">
+    Continue
+  </button>
+
+  <input #input type="file" (change)="addMoreImage($event)" multiple style="display: none">
+</div>

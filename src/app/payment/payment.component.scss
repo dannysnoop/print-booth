@@ -1,0 +1,88 @@
+.wrapper {
+  width: 92%;
+  margin: 0 auto;
+  background: transparent;
+  overflow: auto;
+  height: 100%;
+  &__info {
+    padding: 10px;
+    background-color: rgba(218, 255, 249, 1);
+    color: black;
+  }
+
+  &__content {
+    background: #fff;
+    padding: 5px;
+    width: 750px;
+    @media only screen and (max-width: 510px){
+      width: unset;
+    }
+    &--left {
+      border-radius: 10px;
+      padding: 15px;
+      background: linear-gradient(134deg, #04a468 0%, #0d788c 100%);
+      h3{
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 1.375rem;
+      }
+      &-bank , &-owner , &-accountNumber , &-content , &-alert  {
+        color: #fff;
+        margin-bottom: 1.375rem;
+
+      }
+      &-bank {
+        p  {
+        }
+      }
+      &-owner {
+        .name {
+          border-bottom: 1px dotted #fff;
+          font-weight: bold;
+        }
+      }
+      &-accountNumber {
+        .name {
+          border-bottom: 1px dotted #fff;
+          font-weight: bold;
+        }
+      }
+      &-alert {
+        font-weight: bold;
+      }
+    }
+    &--right {
+      padding: 30px;
+      text-align: center;
+      h3 {
+        font-size: 20px;
+        color: #111036;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.375rem;
+      }
+      h6 {
+        font-size: 15px;
+        margin: 10px 0 5px 0;
+        color: #04a468;
+        font-weight: 500;
+        line-height:25px;
+      }
+
+      img {
+        width: 90%;
+      }
+      @media only screen and (max-width: 510px){
+        img {
+          width: 50%;
+        }
+      }
+
+    }
+  }
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
