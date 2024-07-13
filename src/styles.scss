@@ -1,1 +1,202 @@
-/* You can add global styles to this file, and also import other style files */
+/* General Styles */
+
+:root {
+  --color-black: #000;
+  --color-black-accent: #1d1d1d;
+  --color-cyan-dark: #073e3a;
+  --color-gray-dark: #2d2d2d;
+  --color-negative: #eb5757;
+  --color-neutral: #d2d2d2;
+  --color-positive: #2f80ed;
+  --color-primary: #2f80ed;
+  --color-primary-accent: #0d335f;
+  --color-purple: #90488f;
+  --color-secondary: #d6eaff;
+  --color-standard: #fff;
+  --color-status-primary: #525252;
+  --color-status-secondary: #586876;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #E5E5E5;
+}
+
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section Styles */
+
+/* Sample Images Styles */
+.sample-images {
+  text-align: center;
+}
+
+.sample-images img {
+  width: 30%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Upload Section Styles */
+
+
+
+/* Order Summary Styles */
+#order-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+#order-summary li {
+  margin: 5px 0;
+}
+
+
+.bbutton--primary {
+  background-color: var(--color-primary);
+  color: var(--color-standard);
+}
+
+.main__bbutton {
+  margin: 7vh auto 0 auto;
+}
+
+.bbutton {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  font-family: inherit;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 0;
+  padding: 0 19px;
+}
+
+.bbutton-main {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 15px rgba(3, 58, 130, .35);
+  box-shadow: 0 6px 15px rgba(3, 58, 130, .35);
+  font-size: 18px;
+  height: 60px;
+  margin: 54px auto 0 auto;
+  width: 242px;
+}
+
+
+
+.gallery {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0 2%;
+}
+
+.gallery__card {
+  font-size: 2.208vw;
+  margin: 4% 2% 0 2%;
+  width: 46%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 6px 25px rgba(0, 0, 0, .15);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, .15);
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.card__image--preset4 {
+  height: 91.10512%;
+  margin: 3.3367% 3.3367% auto 3.3367%;
+  width: 93.32659%;
+}
+
+.card--preset4:before {
+  padding-top: 75.02528%;
+}
+
+.card:before {
+  content: "";
+  float: left;
+  height: 0;
+  margin-left: -1px;
+  width: 1px;
+}
+
+.bbutton--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.bbutton-thin {
+  border-radius: 10px;
+  font-weight: 500;
+  height: 42px;
+}
+
+.bbutton-navi {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.bbutton-normal {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 16px;
+  margin: 10px  ;
+}
